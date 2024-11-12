@@ -5,21 +5,23 @@
 class Ddenv < Formula
   desc "tool for maintaining a local environment for development"
   homepage "https://github.com/denisdefreyne/ddenv"
-  version "0.1.0"
+  version "0.1.1"
   license "Hippocratic License 3.0"
+
+  depends_on "shadowenv"
   depends_on :macos
 
   on_intel do
-    url "https://github.com/denisdefreyne/ddenv/releases/download/v0.1.0/ddenv_Darwin_x86_64.tar.gz"
-    sha256 "5beca516db6b3921b370208e97a69a9c76099eb2d4969a6886802637ef2da240"
+    url "https://github.com/denisdefreyne/ddenv/releases/download/v0.1.1/ddenv_Darwin_x86_64.tar.gz"
+    sha256 "dac3a73570d28a5d74ea2c3a75a1f1ea7596f8c41f2d61b73f1e64557bf40a8c"
 
     def install
       bin.install "ddenv"
     end
   end
   on_arm do
-    url "https://github.com/denisdefreyne/ddenv/releases/download/v0.1.0/ddenv_Darwin_arm64.tar.gz"
-    sha256 "9705360e4ca07db0f4d23eca4fed568730c5cbbb0bd975e0e3ba1065f0f4cf86"
+    url "https://github.com/denisdefreyne/ddenv/releases/download/v0.1.1/ddenv_Darwin_arm64.tar.gz"
+    sha256 "db7ac8d9fa5598bc404d9e7217872d5c21d16f2bb50181fdece4b20586db2db3"
 
     def install
       bin.install "ddenv"
